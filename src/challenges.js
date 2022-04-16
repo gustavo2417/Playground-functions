@@ -15,11 +15,13 @@ let calculo = 0;
 return calculo = base*height/2
 }
 console.log(calcArea(51,1))
-// Desafio 3
-function splitSentence() {
-  // seu código aqui
-}
 
+// Desafio 3
+function splitSentence(phrase) {
+  let strings = phrase.split(" ");
+  return strings
+}
+console.log(splitSentence("foguete"))
 // Desafio 4
 function concatName() {
   // seu código aqui
