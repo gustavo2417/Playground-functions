@@ -6,15 +6,15 @@ function compareTrue(projectLL,projectPF) {
     return false
   } else {
     return false
-  }
+  }  
 }
-console.log(compareTrue(false, true))
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base,height) {
+let calculo = 0; 
+return calculo = base*height/2
 }
-
+console.log(calcArea(51,1))
 // Desafio 3
 function splitSentence() {
   // seu código aqui
