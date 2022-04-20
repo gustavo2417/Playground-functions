@@ -95,8 +95,16 @@ function decode(before) {
 
 
 // Desafio 10
-function techList() {
-  
+function techList(tech, name) {
+  let objectList = [];
+  for (let cmd = 0; cmd < tech.length; cmd += 1){
+    tech = tech.sort()
+    objectList.push({tech:tech[cmd],name:name})
+  }
+  if(objectList.length === 0) {
+    return "Vazio!"
+  }
+  return objectList
 }
 
 module.exports = {
