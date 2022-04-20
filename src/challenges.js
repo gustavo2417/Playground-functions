@@ -52,10 +52,10 @@ function highestCount(numbers) {
 console.log(highestCount([0, 0, 0]));
 // Desafio 7
 function catAndMouse(mouse,cat1,cat2) {
-  if (mouse < cat1 > cat2){
-    return 'cat2'
-}else if (mouse < cat2 > cat1) {
+  if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)){
     return 'cat1'
+}else if (Math.abs(mouse - cat1) > Math.abs(mouse - cat2)) {
+    return 'cat2'
 }  else {
   return 'os gatos trombam e o rato foge'
   }
@@ -77,12 +77,22 @@ function fizzBuzz(primos) {
   return array
 }
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+function encode(text) {
+  
+  for(let ind = 0;ind < text.length; ind += 1) {
+    text = text.replace("a",1).replace("e",2).replace("i",3).replace("o",4).replace("u",5)
+  }
+  return text
+} console.log(encode("hi there!"))
+
+function decode(before) {
+    for(let ind = 0;ind < before.length; ind += 1) {
+   
+    before = before.replace(1,"a").replace(2 ,"e").replace(3,"i").replace(4,"o").replace(5,"u")
+  }
+  return before
+} console.log(decode("h3 th2r2!"))
+
 
 // Desafio 10
 function techList() {
